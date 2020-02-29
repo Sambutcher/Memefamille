@@ -14,11 +14,14 @@
   <meta name="apple-mobile-web-app-title" content="Hello World">
   <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
   <meta name="msapplication-TileColor" content="#FFFFFF">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body class="fullscreen">
-  <div class="container">
-    <h1 class="title">Hello World!</h1>
-    <button class="add-button">Add to home screen</button>
+  <div class="container" id="page1">
+    <h1 class="title">Page 1</h1>
+  </div>
+  <div hidden class="container" id="page2">
+    <h1 class="title">Page 2</h1>
   </div>
   <script src="js/main.js"></script>
 </body>
