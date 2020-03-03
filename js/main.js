@@ -15,7 +15,7 @@ $('#goracine').click(function(){
   for (let i=n;i<=m;i++){
     res=res+tablemmes[i]+"<BR>";
 
-    console.log(tablemmes[i]);
+    console.log(res);
   };
 
   $('#result').html(res);
