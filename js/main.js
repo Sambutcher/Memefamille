@@ -12,10 +12,13 @@ $('#goracine').click(function(){
   var m= tabflechies.lastIndexOf(mot);
 
   var res=[];
-  for (let i=n;i<=m;i++){
-    if (tablemmes[i] != ""){
-        res.push(tablemmes[i]);
-    };    
+  if (n!=-1){
+    res.push(mot);
+    for (let i=n;i<=m;i++){
+        if (tablemmes[i] != ""){
+            res.push(tablemmes[i]);
+        };    
+    };
   };
 
   console.log(res);
