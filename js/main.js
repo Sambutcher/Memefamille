@@ -11,13 +11,13 @@ $('#goracine').click(function(){
   var n= tabflechies.indexOf(mot);
   var m= tabflechies.lastIndexOf(mot);
 
-  var res="";
+  var res=[];
   for (let i=n;i<=m;i++){
-    res=res+tablemmes[i]+"<BR>";
-
-    console.log(res);
+    if (tablemmes!=""){
+        res=res.push(tablemmes[i]);
+    };    
   };
 
-  $('#result').html(res);
+  $('#result').toString(res);
 
 });
