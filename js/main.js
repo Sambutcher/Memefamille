@@ -7,17 +7,17 @@ $( document ).ready(function() {
 });
 
 $('#goracine').click(function(){
-  var mot=$('#montexte').val();
-  var i= tabflechies.indexOf(mot);
-  var j= tabflechies.lastIndexOf(mot);
+  var mot=$('#montexte').val().toLowerCase();
+  var n= tabflechies.indexOf(mot);
+  var m= tabflechies.lastIndexOf(mot);
 
   var res="";
-  for (let n=i;n<=j;n++){
-    res=res+tablemmes[n]+"<BR>";
+  for (let i=n;i<=m;i++){
+    res=res+tablemmes[i]+"<BR>";
 
-    console.log(tablemmes[n]);
+    console.log(tablemmes[i]);
   };
 
-  $('#result').html(tablemmes[i]+"<BR>"+tablemmes[j]);
+  $('#result').html(res);
 
 });
