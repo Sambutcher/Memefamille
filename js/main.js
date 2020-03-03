@@ -19,6 +19,6 @@ $('#goracine').click(function(){
   };
 
   console.log(res);
-  $('#result').html(toString(res));
+  $('#result').html(res.toString());
 
 });
