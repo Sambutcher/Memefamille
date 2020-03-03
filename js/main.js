@@ -13,7 +13,7 @@ $('#goracine').click(function(){
 
   var res=[];
   for (let i=n;i<=m;i++){
-    if (tablemmes!=""){
+    if (tablemmes[i] != ""){
         res.push(tablemmes[i]);
     };    
   };
