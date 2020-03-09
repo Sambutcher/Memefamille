@@ -1,13 +1,6 @@
-
-
-$( document ).ready(function() {
-    $('#page1').show();
-
-});
-
-import {table1,table2} from './js/tables.js';
-//const table1=["a","b","b","b","c","g"];
-//const table2=["d","e","a","c","b","a"];
+//import {table1,table2} from './famille/tables.js';
+const table1=["a","b","b","d","c","g"];
+const table2=["d","e","a","c","b","a"];
 
 //pour un tableau d'entrées, les cherchent dans table1 et renvoie la liste des homologues de table2
 function listeSuivants(t){
@@ -29,7 +22,6 @@ function nettoie(t){
   return (Array.from(new Set(t))).sort();
 }
 
-//boucle
 function famille(mot){
   var res=[mot];
   var temp=[];
@@ -40,8 +32,4 @@ function famille(mot){
   return res;
 }
 
-$('#goracine').click(function(){
-  var res=famille($('#montexte').val());
-  $('#result').html(res.toString());
-
-});
+console.log(famille('a'));
