@@ -2,7 +2,6 @@
 
 $( document ).ready(function() {
     $('#page1').show();
-    import {table1,table2} from './js/tables.js';
 
 });
 
