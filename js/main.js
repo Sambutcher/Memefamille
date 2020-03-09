@@ -2,10 +2,11 @@
 
 $( document ).ready(function() {
     $('#page1').show();
+    import {table1,table2} from './js/tables.js';
 
 });
 
-import {table1,table2} from './js/tables.js';
+
 //const table1=["a","b","b","b","c","g"];
 //const table2=["d","e","a","c","b","a"];
 
