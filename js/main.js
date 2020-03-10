@@ -18,7 +18,7 @@ function listeSuivants(t){
     var m=table1.lastIndexOf(t[i]);
     if (n!=-1){
       for (let j=n;j<=m;j++){
-      res.push(table2[j]);
+      if (!table2[j].includes('-')) {res.push(table2[j])};
       }
     }
   }
@@ -33,6 +33,7 @@ function nettoie(t){
 //boucle
 function famille(mot){
   var res=[mot];
+  if (table1.indexOf(mot)==-1){res=[]};
   var temp=[];
   while (res.length!=temp.length){
     temp=res;
